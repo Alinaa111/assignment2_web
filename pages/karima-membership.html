@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Membership – Fitness Project</title>
+  <link rel="stylesheet" href="../styles/karima-membership.css">
+</head>
+<body>
+    <header>
+        <div id="navbar"></div>
+    </header>
+    <br><br><br>
+  <footer>
+    <div id="../contacts.html"> </div>
+  </footer>
+
+
+  <script>
+    fetch("../nav.html")
+
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <script>
+    fetch("../contacts.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("contacts").innerHTML = data;
+      });
+  </script>
+  
+
+  <main>
+    <h1>Выберите свой абонемент</h1>
+    <p class="subtitle">В каждом абонементе есть бесплатные гостевые для друзей</p>
+
+    <div class="membership-container">
+      <div class="card green">
+        <h2>3 месяца</h2>
+        <p class="price">48 330 ₸</p>
+        <p class="per">в месяц</p>
+        <ul>
+          <li>144+ зала</li>
+          <li>5 гостевых</li>
+        </ul>
+        <button>Купить</button>
+      </div>
+
+      <div class="card pink">
+        <h2>6 месяцев</h2>
+        <p class="price">32 498 ₸</p>
+        <p class="per">в месяц</p>
+        <ul>
+          <li>144+ зала</li>
+          <li>8 гостевых</li>
+        </ul>
+        <button>Купить</button>
+      </div>
+
+      <div class="card blue">
+        <h2>12 месяцев</h2>
+        <p class="price">22 499 ₸</p>
+        <p class="per">в месяц</p>
+        <ul>
+          <li>144+ зала</li>
+          <li>12 гостевых</li>
+        </ul>
+        <button>Купить</button>
+      </div>
+
+      
+    </div>
+  </main>
+
+  <br><br><br>
+  <footer>
+    <div>
+      <p>(c) Alina Moldabayeva, Karima Shurenova, Aliya Sadvokassova, Aisha Yerbolat</p>
+      <p>SE-2405, BirQadam</p>
+    </div>
+  </footer>
+
+</body>
+</html>
