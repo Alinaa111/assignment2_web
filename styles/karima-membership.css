@@ -7,12 +7,12 @@ body {
 }
 
 nav {
-  background: #ffffff;
+  background: #000000;
   padding: 10px;
 }
 
 nav a {
-  color: #000000;
+  color: #ffffff;
   margin-right: 15px;
   text-decoration: none;
 }
