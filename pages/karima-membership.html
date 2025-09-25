@@ -10,28 +10,6 @@
     <header>
         <div id="navbar"></div>
     </header>
-    <br><br><br>
-  <footer>
-    <div id="../contacts.html"> </div>
-  </footer>
-
-
-  <script>
-    fetch("../nav.html")
-
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("navbar").innerHTML = data;
-      });
-  </script>
-
-  <script>
-    fetch("../contacts.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("contacts").innerHTML = data;
-      });
-  </script>
   
 
   <main>
@@ -76,13 +54,28 @@
     </div>
   </main>
 
+
   <br><br><br>
   <footer>
-    <div>
-      <p>(c) Alina Moldabayeva, Karima Shurenova, Aliya Sadvokassova, Aisha Yerbolat</p>
-      <p>SE-2405, BirQadam</p>
-    </div>
+    <div id="сontacts"> </div>
   </footer>
+
+  <script>
+    fetch("nav-pages.html")
+
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <script>
+    fetch("../contacts.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("contacts").innerHTML = data;
+      });
+  </script>
 
 </body>
 </html>
