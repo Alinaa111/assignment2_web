@@ -1,0 +1,46 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-now-display');
+@import url('https://fonts.cdnfonts.com/css/bond');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #161618;
+    font-family: 'Bond', sans-serif;
+    text-align: center;
+}
+
+.about {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.about-heading {
+    font-family: 'Helvetica Now Display', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #161618;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-family: 'Bond', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #46464A;
+    margin-bottom: 40px;
+}
+
+
+.about-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.about-icons img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}

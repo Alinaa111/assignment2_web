@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - BirQadam</title>
+    <link rel="stylesheet" href="../styles/shared.css">
+    <link rel="stylesheet" href="../styles/aisha.css">
+    <link href="https://fonts.cdnfonts.com/css/helvetica-now-display" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/bond" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="navbar"></div>
+    </header>
+    <br><br><br>
+    <section class="about" valign="center">
+        <h1 class="about-heading">BirQadam – One Step Forward</h1>
+        <p class="about-text">
+            BirQadam is a fitness and lifestyle platform inspired by the idea of making sport accessible to everyone. 
+            Just like 1fit, it brings together a wide range of activities – from yoga and swimming to crossfit and martial arts – 
+            all in one place. With BirQadam, staying active becomes simple, flexible, and enjoyable.
+        </p>
+        <div class="about-icons">
+            <img src="../images/1asd.png" alt="icon1">
+            <img src="../images/2asd.png" alt="icon2">
+            <img src="../images/3asd.png" alt="icon3">
+            <img src="../images/4asd.png" alt="icon4">
+            <img src="../images/5asd.png" alt="icon5">
+            <img src="../images/6asd.png" alt="icon6">
+            <img src="../images/7asd.png" alt="icon7">
+        </div>
+    </section>
+    <br><br><br>
+    <br><br><br>
+  <footer>
+    <div id="contacts"> </div>
+  </footer>
+
+  
+  <script>
+    fetch("../nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <script>
+    fetch("../contacts.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("contacts").innerHTML = data;
+      });
+  </script>
+</body>
+</html>
