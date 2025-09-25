@@ -7,7 +7,6 @@ body {
 }
 
 nav {
-  background: #000000;
   padding: 10px;
 }
 
@@ -17,9 +16,6 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
 
 main {
   padding: 30px;
