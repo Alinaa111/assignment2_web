@@ -12,6 +12,20 @@
     <header>
   <div id="navbar"></div>
     </header>
+<aside>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../pages/aliya-profile.html">Profile</a></li>
+      <li><a href="../aliya-login.html">Login</a></li>
+      <li><a href="../pages/alina-fitness.html">Fitness Programs</a></li>
+      <li><a href="../pages/karima-membership.html">Membership</a></li>
+      <li><a href="../pages/karima-schedule.html">Schedule</a></li>
+      <li><a href="../pages/aisha-faq.html">FAQ</a></li>
+      <li><a href="../pages/aisha-about.html">About Us</a></li>
+    </ul>
+  </nav>
+</aside>
 
 
     <main>
@@ -34,21 +48,24 @@
 </div>
 </main>
 
-<script>
-  fetch("nav-pages.html") 
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("navbar").innerHTML = data;
-    });
-</script>
+<footer>
+    <div id="contacts"></div>
+  </footer>
 
-<script>
-  fetch("../contacts.html") 
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("contacts").innerHTML = data;
-    });
-</script>
+  <script>
+    fetch("nav-pages.html") 
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+  <script>
+    fetch("../contacts.html") 
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("contacts").innerHTML = data;
+      });
+  </script>
 
 </body>
 </html>
