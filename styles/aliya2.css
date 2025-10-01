@@ -33,8 +33,11 @@ text-decoration: underline;
 aside {
 grid-area: sidebar;
 background: #f4f6ff;
-padding: 20px;
+padding: 22px;
 box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+position: fixed;
+top: 20;  
+height: calc(100% - 60px); 
 }
 
 aside nav ul {
