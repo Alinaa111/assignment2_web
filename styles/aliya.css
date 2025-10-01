@@ -17,8 +17,9 @@ overflow-x: hidden;
 aside {
 grid-area: sidebar;
 background: #f4f6ff;
-padding: 20px;
+padding: 22px;
 box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+position: fixed;
 }
 
 aside nav ul {
@@ -71,7 +72,7 @@ max-width: 1100px;
 }
 
 .image {
-max-width: 450px;
+max-width: 550px;
 width: 100%;
 height: auto;
 object-fit: cover;
@@ -86,6 +87,7 @@ border-radius: 15px;
 box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 width: 320px;
 text-align: center;
+padding-right: 30px;
 }
 
 .login-box h2 {
