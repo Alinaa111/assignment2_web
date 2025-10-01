@@ -7,98 +7,149 @@ body, h1, h2, p, button {
 
 /* Body background */
 body {
-  background-color: #6d75f5; /* light purple/blue */
+  background: #ffffff; /* белый фон */
   text-align: center;
-  color: #fff;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Navigation */
 nav {
-  padding: 10px;
+  padding: 15px 20px;
+  background: #3447F6; /* оставим цвет шапки */
 }
 
 nav a {
   color: #ffffff;
   margin-right: 15px;
   text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+nav a:hover {
+  opacity: 0.7;
 }
 
-main {
-  padding: 30px;
-  text-align: center;
-}
 /* Main content */
 main {
-  margin-top: 30px;
+  flex: 1;
+  padding: 60px 20px;
 }
 
 /* Schedule Heading */
 h1 {
-  font-size: 28px;
+  font-size: 2.4rem;
   font-weight: bold;
-  margin-top: 20px;
+  margin-bottom: 15px;
+  color: #333;
+  position: relative;
+}
+h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #f4b400, #ff6f61);
+  margin: 12px auto 0;
+  border-radius: 2px;
 }
 
 .subtitle {
-  color: #ffffff;
-  margin-top: 5px;
-  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
 }
 
 /* Membership container */
 .membership-container {
-  margin-top: 30px;
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 
-/* Orange card */
+/* Card */
 .card {
-  background-color: #ffffff; /* bright orange */
-  border-radius: 10px;
-  padding: 25px 40px;
+  position: relative;
+  background: #007cf0;
+  border-radius: 16px;
+  padding: 40px 30px;
   width: 80%;
   max-width: 600px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  color: rgb(13, 13, 13);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  color: #333;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Card hover animation */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.05);
+  transform: skewX(-20deg);
+  transition: left 0.5s;
+  z-index: 1;
+}
+.card:hover::before {
+  left: 100%;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
 }
 
 /* Inside card */
+.card h2, 
+.card p, 
+.card button {
+  position: relative;
+  z-index: 2;
+}
+
 .card h2 {
-  font-size: 22px;
-  margin-bottom: 10px;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #ffffff;
 }
 
 .card p {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  font-size: 1.05rem;
+  color: #f1f1f1;
 }
 
 /* Button */
 button {
-  background-color: #1e40af; /* dark blue */
-  color: white;
+  background: linear-gradient(135deg, #ffffff, #f8f8f8);
+  color: rgb(0, 0, 0);
   border: none;
-  padding: 12px 25px;
+  padding: 12px 30px;
   font-size: 16px;
   font-weight: bold;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 button:hover {
-  background-color: #3b82f6; /* lighter blue */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
-/* Footer */
 footer {
+  margin-top: 50px;
   bottom: 0;
   left: 0;
   width: 100%;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   background: #f3f4f6;
   color: #555;
   font-size: 14px;
   border-top: 1px solid #ddd;
-
 }
