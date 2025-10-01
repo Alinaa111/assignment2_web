@@ -95,6 +95,31 @@
   </footer>
 
   <script>
+<<<<<<< HEAD
+    fetch("nav-pages.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+
+        document.getElementById("navToggle").addEventListener("click", function () {
+          document.getElementById("navMenu").classList.toggle("active");
+        });
+      });
+  </script>
+
+<script>
+  fetch("../contacts.html") 
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("contacts").innerHTML = data;
+    });
+</script>
+
+<br><br><br>
+    <footer>
+        <div id="contacts"> </div>
+    </footer>
+=======
     fetch("nav-pages.html") 
       .then(res => res.text())
       .then(data => {
@@ -108,6 +133,7 @@
         document.getElementById("contacts").innerHTML = data;
       });
   </script>
+>>>>>>> origin/main
 </body>
 </html>
 
