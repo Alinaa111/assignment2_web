@@ -13,21 +13,7 @@ margin: 0;
 overflow-x: hidden;
 }
 
-.nav_main {
-display: flex;  
-justify-content: space-between;
-align-items: center;
-}
 
-.nav_main a {
-color: #fff;
-text-decoration: none;
-margin: 0 12px;
-}
-
-.nav_main a:hover {
-text-decoration: underline;
-}
 
 /* sidebar */
 aside {
